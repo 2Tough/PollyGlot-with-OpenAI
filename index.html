@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main--app">
+      <div class="main--app--background">
+        <img class="bird--image" src="/assets/parrot.png" />
+      </div>
+
+      <div>
+        <h1>PollyGlot</h1>
+        <h3>Best translation app</h3>
+      </div>
+      <div class="main--app--content">
+        <h2>Text to translate</h2>
+        <label for="input--text"></label>
+        <input
+          type="text"
+          id="input--text"
+          placeholder="Enter text to translate"
+        />
+        <h2 class="languages--title">Select language</h2>
+        <div class="languages">
+          <div>
+            <label for="input--select--Spanish">Spanish</label>
+            <input type="radio" id="input--select--Spanish" />
+          </div>
+          <div>
+            <label for="input--select--French">French</label>
+            <input type="radio" id="input--select--French" />
+            
+          </div>
+          <div>
+            <label for="input--select--Italian">Italian</label>
+            <input type="radio" id="input--select--Italian" />
+            
+          </div>
+
+          <button class="translate--btn">Translate</button>
+          
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
