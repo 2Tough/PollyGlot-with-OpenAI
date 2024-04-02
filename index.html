@@ -5,46 +5,60 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="main--app">
-      <div class="main--app--background">
-        <img class="bird--image" src="/assets/parrot.png" />
+      <div class="main--app--top">
+        <div class="main--app--top--container">
+          <div class="main--app--top--bird--container">
+            <img class="bird--image" src="/assets/parrot.png" />
+          </div>
+          <div>
+            <h1 class="app--name">PollyGlot</h1>
+            <h5 class="app--name--slogan">Best translation app</h5>
+          </div>
+        </div>
       </div>
 
-      <div>
-        <h1>PollyGlot</h1>
-        <h3>Best translation app</h3>
-      </div>
-      <div class="main--app--content">
+      <div class="main--app--content--container">
         <h2>Text to translate</h2>
         <label for="input--text"></label>
         <input
           type="text"
           id="input--text"
+          class="main--app--content--container--input--text"
           placeholder="Enter text to translate"
         />
         <h2 class="languages--title">Select language</h2>
-        <div class="languages">
+        <div class="main--app--content--container--languages">
           <div>
+            <input type="radio" id="input--select--Spanish" class="main--app--content--container--languages--select"/>
             <label for="input--select--Spanish">Spanish</label>
-            <input type="radio" id="input--select--Spanish" />
           </div>
           <div>
+            <input type="radio" id="input--select--French" class="main--app--content--container--languages--select"/>
             <label for="input--select--French">French</label>
-            <input type="radio" id="input--select--French" />
-            
           </div>
           <div>
+            <input type="radio" id="input--select--Italian" class="main--app--content--container--languages--select"/>
             <label for="input--select--Italian">Italian</label>
-            <input type="radio" id="input--select--Italian" />
-            
           </div>
-
-          <button class="translate--btn">Translate</button>
-          
         </div>
+        <button class="translate--btn">Translate</button>
       </div>
     </div>
 
