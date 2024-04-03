@@ -37,12 +37,12 @@
       <div class="main--app--content--container">
         <h2>Text to translate</h2>
         <label for="input--text"></label>
-        <input
-          type="text"
-          id="input--text"
-          class="main--app--content--container--input--text"
-          placeholder="Enter text to translate"
-        />
+        <textarea id="input--text"
+        class="main--app--content--container--input--text"
+        placeholder="Enter text to translate">
+          
+          
+        </textarea>
         <h2 class="languages--title">Select language</h2>
         <div class="main--app--content--container--languages">
           <div>
@@ -58,7 +58,8 @@
             <label for="input--select--Italian">Italian</label>
           </div>
         </div>
-        <button class="translate--btn">Translate</button>
+        <label for="translate--btn"></label>
+        <button class="translate--btn" id="translate--btn">Translate</button>
       </div>
     </div>
 

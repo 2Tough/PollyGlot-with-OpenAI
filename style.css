@@ -68,8 +68,10 @@ html, body {
 }
 
 .main--app--content--container--input--text {
+    width: 75%;
+    padding: 0.7em;
+
     text-align:start;
-    text-align: center;
     border-radius: 10px;
     border: none;
     background-color: #EFF0F4;
@@ -126,5 +128,27 @@ html, body {
     .main--app--content--container {
         border: none;    
         
+    }
+}
+
+@media (min-width: 1600px) {
+
+    .main--app {
+        border: black 2px solid;
+    }
+    .main--app--top {
+        background-size: cover;
+        
+
+    }
+
+    .main--app--content--container {
+        border: none;    
+        
+    }
+
+    .main--app--content--container--languages {
+        margin-left: 4em;
+    
     }
 }
