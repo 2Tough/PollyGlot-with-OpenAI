@@ -67,14 +67,14 @@ html, body {
     margin: 1em;
 }
 
-.main--app--content--container--input--text {
-    width: 75%;
-    padding: 0.7em;
-
-    text-align:start;
+#input--text {
     border-radius: 10px;
     border: none;
     background-color: #EFF0F4;
+    width: 75%;
+    min-height: 6rem;
+    padding-top: 0.8em;
+    padding-left: 0.8em
 }
 
 .main--app--content--container--languages {
@@ -95,24 +95,43 @@ html, body {
     color: #035A9D;
 }
 
-#input--text {
-    width: 80%;
-    height: 100%;
-    min-height: 6rem;
-}
 
-.translate--btn {
+.translate--btn, .restart--btn {
+    margin: auto;
     color: white;
     background-color: #035A9D;
     font-size: 1.5em;
     width: 80%;
     padding: 0.6em 1.2em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.0em;
     margin-top: 1.5em;
     border-radius: 10px;
     border: none;
     
 }
+
+#restart--btn {
+    display: none;
+    margin-top: 0.5em;
+    
+}
+
+#textToTranslateTitle {
+    display: none;    
+}
+
+.output-panel {
+    margin: auto;
+    display: none;
+    background: #EFF0F4;
+    border-radius: 10px;
+    width: 80%;
+    height: 100%;
+    min-height: 7rem;
+    padding-top: 1em
+}
+
+
 
 @media (max-width: 900px) {
 
